@@ -1,0 +1,105 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --first-color: #da2535;
+  --first-color-alt: #c42130;
+  --first-color-send: #de3b49;
+  --title-color: #161212;
+  --text-color: #5b5757;
+  --text-color-light: #8f8a8a;
+  --body-color: #fefbfb;
+  --container-color: #fff;
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 3rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+
+  /*========== Font weight ==========*/
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  color: var(--title-color);
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Reescrevendo as cores do bootstrap */
+.nav-link-color {
+  color: var(--title-color) !important;
+  margin-left: 2.5rem;
+}
+.active {
+  color: var(--first-color) !important;
+}
+.navbar-brand {
+  columns: var(--title-color);
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    height: calc(3rem + 1.5rem);
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* Home */
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+}
+.btn__home {
+  background-color: var(--first-color);
+  color: var(--body-color);
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+/* Share */
+.share__content{
+    margin-top: 4rem;
+}
+
+.share__title {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-bold);
+  }
+  .share__home {
+    background-color: var(--first-color);
+    color: var(--body-color);
+    padding: 1rem;
+  }
+/* MediaQuerys */
+
+@media screen and (min-width: 768px) {
+  .home__content {
+    padding: 1rem 7rem;
+  }
+  .share__content {
+    padding: 1rem 7rem;
+    margin-top: 7.5rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .home__img {
+    order: 1;
+  }
+  .share__img{
+      order: -1
+  }
+}

@@ -1,0 +1,65 @@
+.card{
+    margin-top: 15%;
+    border: none !important;
+    border-radius: 1rem !important; 
+    overflow: hidden;
+}
+
+.background1{
+background-color: #E3F8FF;
+}
+.background2{
+    background-color: #FFE8DF;
+}
+i{
+    font-size: 1.5rem;
+}
+.card{
+    margin-top: 0 !important;
+}
+.card__preci--before{
+    color: red;
+    font-size: 0.813rem;
+}
+
+.card__preci--now{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.card__name {
+    position: absolute;
+    left: -25%;
+    top: 0;
+    width: 3.5rem;
+    height: 100%;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    transition: .5s;
+    border-radius: 0 1rem 1rem 0;
+    z-index: 2;
+}
+
+.card-body{
+    transition: 0.5s;
+}
+.card__img{
+    transition: 0.5s;
+}
+
+.card:hover .card__name{
+    left: 0;
+}
+
+.card:hover .card__img{
+    transform: rotate(30deg);
+    padding-left: 50px; 
+}
+
+.card:hover .card-body{
+    padding-top: 40px !important;
+    padding-left: 50px; 
+}
